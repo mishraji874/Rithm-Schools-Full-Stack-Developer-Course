@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            /*REMOVE BROWSER MARGIN*/
+        }
+
+        .red {
+            background-color: red;
+            position: fixed;
+            width: 200px;
+            height: 200px;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        .wrapper {
+            width: 500px;
+            height: 400px;
+            background: #e3e3e3;
+            position: relative;
+            margin-bottom: 10px;
+        }
+
+        #front {
+            z-index: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="red"></div>
+    </div>
+    <div class="wrapper"></div>
+    <div class="wrapper"></div>
+    <div class="wrapper"></div>
+    <div class="wrapper" id="front"></div>
+    <div class="wrapper"></div>
+</body>
+
+</html>
+
+<!-- In this example, notice that the red div is always in the bottom-left corner of the screen, no matter where on the page you scroll. If you change the style so that the red div has absolute positioning, you’ll see the difference.
+
+Also note that with fixed positioning, the red div is in front of all the wrapper divs except for the one with an id of front. This is because of the z-index! The larger the z-index, the higher the element should be stacked. If two divs are positioned on top of one another, the one with the lower z-index will appear to be behind the one with the higher z-index. -->

@@ -1,0 +1,41 @@
+<!-- While block, inline, none, and inline-block are four of the most common values for the display property, they aren’t the only values. One family of values you’ll sometimes see relates to table formatting. Even though tables are supported natively in HTML using table, tr, td, and related elements, sometimes you’ll want to position elements as though they were tables without actually using these elements. For this, you can use a number of table-related display values (a full list can be found here. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #table {
+            display: table;
+        }
+
+        .row {
+            display: table-row;
+        }
+
+        .cell {
+            display: table-cell;
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="table">
+        <div class="row">
+            <div class="cell">Data 1</div>
+            <div class="cell">Data 2</div>
+            <div class="cell">Data 3</div>
+        </div>
+        <div class="row">
+            <div class="cell">Data 4</div>
+            <div class="cell">Data 5</div>
+            <div class="cell">Data 6</div>
+        </div>
+    </div>
+</body>
+
+</html>

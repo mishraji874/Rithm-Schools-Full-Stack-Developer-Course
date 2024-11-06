@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            /*REMOVE BROWSER MARGIN*/
+        }
+
+        .red {
+            background-color: red;
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            bottom: 0;
+            right: 0;
+        }
+
+        .wrapper {
+            width: 500px;
+            height: 400px;
+            background: #e3e3e3;
+            position: relative;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="red"></div>
+    </div>
+</body>
+
+</html>
+
+<!-- When you open up this page, you should see that the red div is in the bottom-right corner of its parent. This makes sense: the parent has relative positioning, and the red div is set to be offset 0 pixels from the bottom and the right.
+
+Now, what happens if you remove the position: relative rule from the wrapper class? In this case, the parent of the red div will have static positioning, which means that the position of the red div will be relative to the body! Refresh the page and you should see that the red div has moved to the bottom-right corner of the body, not of its parent! -->

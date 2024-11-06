@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* Let's line up three 200x200 boxes together */
+
+        /* since divs have a display:block; by default, they will stack on top of each other like blocks */
+
+        div {
+            height: 200px;
+            width: 200px;
+            margin: 5px;
+            background: green;
+        }
+
+        /* Let's change the display property for the last two divs; how do you think this will affect the layout? /*
+
+        #three, #four {
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="one">I AM A BOX</div>
+    <div id="two">I AM A BOX</div>
+    <div id="three">I AM A BOX</div>
+    <div id="four">I AM A BOX</div>
+</body>
+
+</html>
+
+<!-- As you can see when you open up this page, the block-level elements both create new lines; were it not for the fixed width, they’d also take up all available horizontal space.
+
+The inline elements don’t create new lines: they share the same horizontal space. But you should notice something else as well: even though we’re setting the width and height properties for these elements, they are only as large as the content inside of them requires! This is a general feature of inline elements: they don’t respect the width and height property. If you set values for these properties on an inline element, those values will simply be ignored.
+
+Knowing this, let’s return to inline-block. Update the display on the last two divs in the above example so that their display is inline-block instead of inline. When you refresh the page, what happens? You should see that the last two divs now respect the width and height values! In fact, inline-block elements behave just like inline elements, except for the fact that you can set their width and height. -->

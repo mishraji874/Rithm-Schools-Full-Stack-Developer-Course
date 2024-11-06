@@ -1,0 +1,36 @@
+<!-- One possible exception is the table-cell value, which can be used to vertically align an element to the middle of its container. In general, vertical alignment can be kind of a pain. But take a look at this example of an element which should be aligned to the middle of the page:
+The key here is that when an element’s display is set to table-cell, it respects a new property, called vertical-align, which lets you adjust the vertical alignment of the element. Try commenting out the display properties in the two divs above, and see how that affects the layout. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #outer {
+            display: table;
+            width: 600px;
+            height: 600px;
+            background-color: blue;
+            color: white;
+        }
+
+        #inner {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="outer">
+        <div id="inner">
+            WOAH I'M IN THE MIDDLE
+        </div>
+    </div>
+</body>
+
+</html>
