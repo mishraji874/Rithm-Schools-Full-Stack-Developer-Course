@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Form Example</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+        integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Add an Animal!</h1>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="What's the name of the animal?">
+            </div>
+            <div class="form-group">
+                <label for="type">Animal Type</label>
+                <select class="form-control" id="type">
+                    <option>Cat</option>
+                    <option>Dog</option>
+                    <option>Horse</option>
+                    <option>Lemur</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="number" class="form-control" id="age" placeholder="What's the age of the animal?" min="0"
+                    max="100" step="1" value="0">
+            </div>
+            <div class="form-group">
+                <label for="fav-food">Favorite Food</label>
+                <input type="text" class="form-control" id="fav-food"
+                    placeholder="What's the favorite food of the animal?">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
