@@ -1,0 +1,5 @@
+# CSS Transitions
+
+CSS transitions are set using the `transition` property. They provide a way to set and control animation speed when changing CSS properties. Instead of having property changes take effect immediately, you can cause the changes in a property to take place over a period of time. For example, if you change the color of an element from white to black, usually the change is instantaneous. With CSS transitions enabled, changes occur at time intervals that follow an acceleration curve, all of which can be customized.
+
+CSS transitions let you decide which properties to animate (by listing them explicitly), when the animation will start (by setting a delay), how long the transition will last (by setting a duration), and how the transition will run (by defining a timing function, e.g. linearly, or quick at the beginning and slow at the end). You can also set transitions for multiple properties by comma separating values in the `transition` property. 
